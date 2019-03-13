@@ -1,0 +1,127 @@
+* { 
+	padding: 0;
+	margin: 0;
+}
+
+strong:first-of-type {
+	color: red;
+}
+
+strong {
+	color: yellow;
+}
+
+body {
+	background: url('https://wallpaperstock.net/blue-freeze-wallpapers_7586_1920x1200.jpg');
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+h2 {
+	color: brown;
+}
+
+.bigDiv {
+	border-style: solid;
+	border-width: thin;
+    margin: 0 auto;
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.options {
+	color: brown;
+	text-align: center;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.setValues {
+	padding: 5px;
+}
+
+.setSize {
+	float: left;
+}
+
+.submitButton {
+	margin-top: 10px;
+	margin-left: 35%;
+	padding: 10px;
+	border-radius: 15px 15px;
+	background-color: #008B8B;
+	font-weight: bold;
+	border: none;
+}
+
+
+.divRules {
+	text-align: center;
+	border-style: solid;
+	border-width: thin;
+    margin: 0 auto;
+    width: 1000px;
+    padding: 10px;
+}
+
+.pRules {
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+
+.footer {
+	bottom: 0;
+	position: absolute;
+    margin-left: 45%;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+ 		h1 {
+		width: 100%;
+	}
+
+	.divRules {
+		width: auto;
+		height: auto;
+	}
+
+ 	.footer {
+ 		bottom: 0;
+		position: absolute;
+		margin: auto;
+		margin-left: 35%;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+	h1 {
+		width: 100%;
+	}
+
+	.bigDiv {
+	border-style: solid;
+	border-width: thin;
+	width: auto;
+	height: auto;
+    margin-bottom: 50px;
+	}
+
+	.divRules {
+		width: auto;
+		height: auto;
+		margin-bottom: 50px;
+	}
+ 	.footer {
+ 		bottom: -380px;
+ 		margin-left : 70px;
+	}
+}

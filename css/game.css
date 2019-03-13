@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url("https://wallpaperstock.net/blue-freeze-wallpapers_7586_1920x1200.jpg");
+}
+
+/*Affiche le nom des joueurs*/
+
+.players {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+.players p {
+  display: inline-block;
+  margin: 10px;
+  border-style: solid;
+  border-width: thin;
+  padding: 10px;
+}
+
+/*Affiche le tour du joueur actuel*/
+
+.playerTurn {
+  text-align: center;
+  font-size: 30px;
+  text-shadow: -2px 1px black;
+  color: white;
+  padding: 10px;
+}
+
+/* Créer la grille de jeu */
+
+table {
+  margin: auto;
+}
+
+tr {
+  background-image: linear-gradient(to right, #558de1, #5080e1, #5271df, #5a61db, #664fd4);
+  display: flex;
+  justify-content: center;
+  padding: 1px;
+}
+
+td {
+  cursor: pointer;
+  display: inline-block;
+  margin: 8px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-top: 5px;
+}
+
+td:hover {
+  background-repeat: repeat;
+}
+
+/*Affiche les tokens sur la grille et ajoute une animation*/
+
+span {
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  margin-top: -800px;
+  animation: bounce 0.46s ease 2 alternate;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+/*Bouton rejouer et coup precédent*/
+
+.playAgain {
+  margin-top: 10px;
+  margin-left: 43%;
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+  background-color: #4682b4;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.retour {
+  margin-left: 20px;
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+  background-color: #4682b4;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.footer {
+  bottom: 0;
+  position: absolute;
+  margin-left: 45%;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  td {
+    width: 35px;
+    height: 35px;
+  }
+
+  .playAgain {
+    margin-left: 25%;
+  }
+
+  .retour {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  td {
+    width: 20px;
+    height: 20px;
+  }
+
+  .playAgain {
+    margin: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .retour {
+    margin-left: 10px;
+  }
+
+  .footer {
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+    margin-left: 25%;
+  }
+}
